@@ -1,8 +1,8 @@
 name: Create Release Asset
 
 on:
-  schedule:
-    - cron: "0 0 * * 0" # weekly
+  # schedule:
+  #   - cron: "0 0 * * 0" # weekly
   push:
     tags:
       'v*'

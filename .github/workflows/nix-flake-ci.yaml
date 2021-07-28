@@ -1,7 +1,11 @@
 name: "CI"
 on:
   pull_request:
+    branches:
+      - non-existed
   push:
+    branches:
+      - non-existed
 jobs:
   nix-build:
     runs-on: ubuntu-latest
