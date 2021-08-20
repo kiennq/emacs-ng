@@ -41,7 +41,7 @@ echo pkg_name=$pkg_name
             --without-pop --without-toolkit-scroll-bars --without-mailutils --without-gsettings \
             --with-all
 
-make -j$(($(nproc) * 2)) NATIVE_FULL_AOT=1
+make -j$(($(nproc) * 2)) # NATIVE_FULL_AOT=1
 # NOTE: use `checkinstall` will make `make install` hangs.
 # See https://github.com/emacs-ng/emacs-ng/issues/364
 make install-strip DESTDIR=$deb_dir
